@@ -1,0 +1,90 @@
+:root {
+  /* ================================================================
+     Memory Garden — Northeast India palette
+     Inspired by tea gardens of Assam, Eri silk, Muga warmth,
+     misty hills, and the subtle red of a Gamosa.
+     ================================================================ */
+
+  /* ---- Semantic tokens (primary API for components) ---- */
+  --bg:           #F6F0E4;   /* Eri Silk Cream — app background */
+  --bg-deep:      #EDE6D4;
+  --surface:      #FFFDF8;   /* Soft Cream — cards, sheets, inputs */
+  --surface-2:    #FAF6EC;
+  --surface-soft: #F3EDDD;
+
+  --primary:      #557A55;   /* Tea Garden Green */
+  --primary-deep: #3E5E40;
+  --primary-soft: #E4EDE4;
+
+  --secondary:    #6F9FA0;   /* Hill Mist Teal */
+  --secondary-deep: #4F7A7B;
+  --secondary-soft: #E2EEEF;
+
+  --accent:       #C89B3C;   /* Muga Gold */
+  --accent-deep:  #A07A22;
+  --accent-soft:  #F4EAD0;
+
+  --danger:       #B94A48;   /* Gamosa Red — sparingly */
+  --danger-deep:  #8E3533;
+  --danger-soft:  #F3DFDE;
+
+  --text:         #263A32;   /* Deep Tea */
+  --text-muted:   #64756C;
+  --text-soft:    #8A9A90;
+
+  --border:       #D7DED4;
+  --border-soft:  #E7ECE3;
+
+  /* ---- Legacy aliases (kept for compatibility, map to new palette) ---- */
+  --ink:          var(--text);
+  --ink-soft:     var(--text-muted);
+  --ink-mute:     var(--text-soft);
+  --line:         var(--border);
+  --line-soft:    var(--border-soft);
+
+  --green:        var(--primary);
+  --green-deep:   var(--primary-deep);
+  --green-soft:   var(--primary-soft);
+  --sage:         #9BB09A;
+  --sage-soft:    #E8EFE6;
+  --peach:        #D8A87A;
+  --peach-soft:   #F4E8D8;
+  --lav:          #9A96B8;
+  --lav-soft:     #EAE8F2;
+  --sun:          var(--accent);
+  --sun-soft:     var(--accent-soft);
+  --rose:         var(--danger);
+  --rose-ink:     var(--danger-deep);
+  --rose-soft:    var(--danger-soft);
+  --water:        var(--secondary);
+  --water-soft:   var(--secondary-soft);
+
+  /* ---- Shadows (subtle, warm) ---- */
+  --shadow-sm: 0 1px 3px rgba(38, 58, 50, 0.06);
+  --shadow:    0 4px 16px rgba(38, 58, 50, 0.08), 0 1px 3px rgba(38, 58, 50, 0.04);
+  --shadow-lg: 0 12px 32px rgba(38, 58, 50, 0.10), 0 2px 6px rgba(38, 58, 50, 0.05);
+
+  /* ---- Radii (gentle, not pill-shaped) ---- */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-leaf: 22px 22px 22px 8px;
+  --r-leaf-r: 22px 22px 8px 22px;
+
+  /* ---- Type scale (patient-first: generous) ---- */
+  --fs-body: 1.125rem;
+  --fs-small: 0.95rem;
+  --fs-h: 1.85rem;
+  --fs-h-lg: 2.1rem;
+
+  --font-body: "Atkinson Hyperlegible", "Noto Sans Bengali", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque", "Noto Sans Bengali", system-ui, sans-serif;
+
+  --nav-h: 76px;
+  --header-h: 64px;
+}
+
+/* Text-size preference (Settings → Text Size) */
+html.ts-small  { font-size: 14.5px; }
+html.ts-normal { font-size: 16px; }
+html.ts-large  { font-size: 18px; }
